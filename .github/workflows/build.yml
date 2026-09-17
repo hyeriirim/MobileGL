@@ -32,7 +32,7 @@ jobs:
     - name: Configure CMake and Build
       run: |
         cd ./3rdparty/glslang
-        python ./update_glslang_source.py
+        python ./update_glslang_sources.py
         cd ../..
 
         for ANDROID_ABI in arm64-v8a armeabi-v7a x86 x86_64; do
