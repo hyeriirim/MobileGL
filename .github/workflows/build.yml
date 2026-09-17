@@ -1,5 +1,8 @@
 name: Build
 
+on:
+  workflow_dispatch:
+
 env:
   BUILD_TYPE: Release
   CCACHE_DIR: /tmp/ccache
